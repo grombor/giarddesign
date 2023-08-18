@@ -1,16 +1,56 @@
 const slider = document.getElementById('slider');
-const slides = slider.querySelectorAll('.flex-none');
-const slideWidth = slides[0].clientWidth;
-
+const sliderContent = document.getElementById('sliderContent');
+const images = ['/src/slider/slider-image1.png', '/src/slider/slider-image2.png', '/src/slider/slider-image2.png', '/src/slider/slider-image3.png',];
 let currentIndex = 0;
 
-function moveToSlide(index) {
-  const newPosition = -index * slideWidth;
-  slider.style.transform = `translateX(${newPosition}px)`;
-  currentIndex = index;
+function createImageElement(src) {
+  const img = document.createElement('img');
+  const width = `w-[688px]`;
+  const height = `h-[737px]`;
+  img.src = src;
+  img.alt = 'Obrazek slajdu';
+  img.classList.add(width, height, 'object-contain');
+  return img;
 }
 
-// setInterval(() => {
-//   currentIndex = (currentIndex + 1) % slides.length;
-//   moveToSlide(currentIndex);
-// }, 3000);
+
+function updateSliderPosition() {
+    const offset = -currentIndex * 688;
+    // const offset = -currentIndex * 100;
+    sliderContent.style.transform = `translateX(${offset}px)`;
+    // sliderContent.style.transform = `translateX(${offset}%)`;
+}
+
+function changeSlide(index) {
+    if (index < 0) {
+        index = images.length - 1;
+    } else if (index >= images.length) {
+        index = 0;
+    }
+
+    currentIndex = index;
+    updateSliderPosition();
+}
+
+function nextSlide() {
+    changeSlide(currentIndex + 1);
+}
+
+function previousSlide() {
+    changeSlide(currentIndex - 1);
+}
+
+// setInterval(nextSlide, 3000);
+
+// Dodawanie grafik do slidera
+images.forEach(imageSrc => {
+    const imgElement = createImageElement(imageSrc);
+    sliderContent.appendChild(imgElement);
+});
+
+// Przypisanie zdarzeń do przycisków nawigacyjnych (opcjonalnie)
+const nextButton = document.getElementById('nextButton');
+const prevButton = document.getElementById('prevButton');
+
+nextButton.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', previousSlide);

@@ -26,3 +26,9 @@ body {
    background-color: green;
    z-index: 2;
  }
+
+ #sliderContent img {
+  width: 688px !important;
+  height: 737px !important;
+  object-fit: cover;
+ }
