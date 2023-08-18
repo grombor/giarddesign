@@ -47,6 +47,7 @@
               </svg>
             </button>
           </div>
+
           <div class="hidden lg:flex lg:gap-x-12">
             <a href="#" class="text-sm leading-5">Oferta</a>
             <a href="#" class="text-sm leading-5">O firmie</a>
@@ -60,8 +61,10 @@
               />
             </a>
           </div>
+
         </nav>
-        <div class="lg:hidden" role="dialog" aria-modal="true">
+
+        <div class="lg:hidden" role="dialog" aria-modal="true" id="mobileMenu">
           <div class="fixed inset-0 z-50"></div>
           <div
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
@@ -78,6 +81,7 @@
               <button
                 type="button"
                 class="-ml-10 rounded-md p-2.5 text-gray-700 mr-6"
+                id="closeButton"
               >
                 <span class="sr-only">Zamknij menu</span>
                 <svg
@@ -133,14 +137,14 @@
         </div>
       </header>
 
-      <section class="relative flex justify-between mt-[72px] h-[737px] bg-[#DCC1AB]" id="intro">
+      <section class="relative flex justify-between lg:mt-[72px] lg:h-[737px] bg-[#DCC1AB]" id="intro">
 
         <div class="flex-initial w-1/2 py-[144px] pl-[25px]">
           <div class="mx-16">
             <h1 class="text-6xl font-medium py-11">
               Nowoczesna aranżacja Twojego ogrodu
             </h1>
-            <div class="xl:max-w-[489px] text-base">
+            <div class="lg:max-w-[489px] text-base">
               <p>
                 Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
                 realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
@@ -182,7 +186,7 @@
 
         <div class="flex-initial w-1/2 h-[737px]">
           <div class="flex items-center justify-end absolute bottom-0 right-0">
-            <div id="slider" class="overflow-hidden related h-full w-[688px]">
+            <div id="slider" class="overflow-hidden related h-full lg:w-[688px]">
               <div id="sliderContent" class="flex">
                 <!-- <img
                   src="/src/slider/slider-image1.png"
@@ -252,7 +256,7 @@
         </div>
       </section>
 
-      <section class="bg-[#F5F0EC] pt-[120px] pb-[120px]">
+      <section class="bg-[#F5F0EC] pt-[120px] lg:pb-[120px]">
         <div class="max-w-[1040px] mx-auto pl-[111px]">
           <h1 class="text-base text-[#1B5B31]">Oferta</h1>
           <h2 class="text-5xl leading-normal font-medium inter mt-4 mb-8">
@@ -268,7 +272,7 @@
         <div class="mx-auto px-[90px] max-w-[1262px]">
           <div class="grid gap-x-64 grid-cols-3 mt-24">
             <div
-              class="w-[378px] h-[370px] px-10 py-12 bg-white rounded-lg gap-x-16"
+              class="lg:w-[378px] h-[370px] px-10 py-12 bg-white rounded-lg gap-x-16"
             >
               <div>
                 <figure>
@@ -307,7 +311,7 @@
             </div>
 
             <div
-              class="w-[378px] h-[370px] px-10 py-12 bg-white rounded-lg gap-x-16"
+              class="lg:w-[378px] h-[370px] px-10 py-12 bg-white rounded-lg gap-x-16"
             >
               <div class="pb-2">
                 <figure>
@@ -346,7 +350,7 @@
             </div>
 
             <div
-              class="w-[378px] h-[370px] px-10 py-12 bg-white rounded-lg gap-x-16"
+              class="lg:w-[378px] h-[370px] px-10 py-12 bg-white rounded-lg gap-x-16"
             >
               <div>
                 <figure>
@@ -524,7 +528,7 @@
             <br />Znajdziesz nas na
             <span class="italic inter font-medium">Instagramie.</span>
           </p>
-          <div class="flex flex-col w-[165px]">
+          <div class="flex flex-col lg:w-[165px]">
             <p class="text-base font-normal inter mb-6 max-w-max">
               Śledź nasze <br />najnowsze realizacje!
             </p>

@@ -2,6 +2,14 @@ const slider = document.getElementById('slider');
 const sliderContent = document.getElementById('sliderContent');
 const images = ['/src/slider/slider-image1.png', '/src/slider/slider-image2.png', '/src/slider/slider-image2.png', '/src/slider/slider-image3.png',];
 let currentIndex = 0;
+const closeButton = document.getElementById('closeButton')
+closeButton.addEventListener('click', handleCloseButton)
+
+function handleCloseButton() {
+    console.log('first')
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.add('hidden');
+}
 
 function createImageElement(src) {
   const img = document.createElement('img');
