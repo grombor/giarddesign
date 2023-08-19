@@ -11,19 +11,19 @@ function handleCloseButton() {
     mobileMenu.classList.add('hidden');
 }
 
-function createImageElement(src) {
-  const img = document.createElement('img');
-  const width = `w-[688px]`;
-  const height = `h-[737px]`;
-  img.src = src;
-  img.alt = 'Obrazek slajdu';
-  img.classList.add(width, height, 'object-contain');
-  return img;
-}
+// function createImageElement(src) {
+//   const img = document.createElement('img');
+//   const width = `w-[688px]`;
+//   const height = `h-[737px]`;
+//   img.src = src;
+//   img.alt = 'Obrazek slajdu';
+//   img.classList.add(width, height, 'object-contain');
+//   return img;
+// }
 
 
 function updateSliderPosition() {
-    const offset = -currentIndex * 688;
+    const offset = -currentIndex * 800;
     // const offset = -currentIndex * 100;
     sliderContent.style.transform = `translateX(${offset}px)`;
     // sliderContent.style.transform = `translateX(${offset}%)`;
@@ -51,10 +51,10 @@ function previousSlide() {
 // setInterval(nextSlide, 3000);
 
 // Dodawanie grafik do slidera
-images.forEach(imageSrc => {
-    const imgElement = createImageElement(imageSrc);
-    sliderContent.appendChild(imgElement);
-});
+// images.forEach(imageSrc => {
+//     const imgElement = createImageElement(imageSrc);
+//     sliderContent.appendChild(imgElement);
+// });
 
 // Przypisanie zdarzeń do przycisków nawigacyjnych (opcjonalnie)
 const nextButton = document.getElementById('nextButton');
