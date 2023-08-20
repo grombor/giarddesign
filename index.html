@@ -137,11 +137,11 @@
       </header>
 
       <section
-        class="relative flex flex-row lg:flex-cols justify-between lg:mt-[72px] lg:h-[737px] bg-[#DCC1AB]"
+        class="relative flex flex-col lg:flex-row justify-between mt-[72px] lg:h-[737px] bg-[#DCC1AB]"
         id="intro"
       >
         <div
-          class="flex-initial flex-row lg:flex-cols lg:w-1/2 py-[144px] px-2 lg:pl-[25px]"
+          class="flex flex-row lg:flex-col lg:w-1/2 py-12 xl:py-[144px] px-2 lg:pl-[25px]"
         >
           <div class="lg:mx-16">
             <h1 class="text-3xl lg:text-6xl font-medium lg:py-11">
@@ -189,19 +189,15 @@
           </div>
         </div>
 
-        <div class="flex-initial lg:w-1/2 h-[737px]">
+        <div class="flex flex-col w-full lg:w-1/2 h-[350px] lg:h-[737px]">
           <div id="default-carousel" class="relative" data-carousel="static">
             <div
               class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-[737px] 2xl:h-[737px]"
             >
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span
-                  class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl"
-                  >Primer Slide</span
-                >
                 <img
                   src="/src/slider/slider-image1.png"
-                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  class="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
                   alt="..."
                 />
               </div>
@@ -209,7 +205,7 @@
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img
                   src="/src/slider/slider-image2.png"
-                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  class="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
                   alt="..."
                 />
               </div>
@@ -217,14 +213,14 @@
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img
                   src="/src/slider/slider-image3.png"
-                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  class="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
                   alt="..."
                 />
               </div>
             </div>
 
             <div
-              class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+              class="flex absolute bottom-2 left-1/2 z-30 space-x-3 -translate-x-1/2"
             >
               <button
                 type="button"
@@ -252,52 +248,50 @@
             </div>
 
             <div
-              class="bg-white z-30 absolute right-[8.5%] bottom-[10.5%] flex"
+              class="bg-white z-30 absolute -bottom-21 lg:bottom-0 inset-x-0 lg:inset-x-auto lg:end-auto xl:right-0 flex justify-center"
             >
               <button
                 type="button"
-                class="flex absolute top-0 left-0 justify-center items-centerh-full cursor-pointer group bg-inherit pl-0 pr-8 py-6"
-                data-carousel-next
-              >
-                <span class="inline-flex justify-center items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-8 h-8"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                    />
-                  </svg>
-                </span>
-              </button>
-              <button
-                type="button"
-                class="flex absolute top-0 right-0 justify-center items-center h-18 cursor-pointer group bg-inherit px-8 py-6"
+                class="cursor-pointer bg-inherit py-6 mx-8"
                 data-carousel-prev
               >
                 <span class="inline-flex justify-center items-center">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    class="w-8 h-8"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
-                    />
-                  </svg>
-
-                  <span class="hidden">Siguiente</span>
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+                  />
+                </svg>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="cursor-pointer bg-inherit py-6 mx-8"
+                data-carousel-next
+              >
+                <span class="inline-flex justify-center items-center">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
                 </span>
               </button>
             </div>
@@ -445,12 +439,12 @@
       </section>
 
       <section
-        class="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-full bg-[#1B5B31] xl:h-[720px] px-2"
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-full bg-[#1B5B31] xl:h-[720px] gap-x-0"
         id="o-firmie"
       >
         <div class="w-full h-full hidden lg:block">
           <figure>
-            <img class="object-cover" src="./src/o-firmie.png" alt="O-firmie" />
+            <img class="object-cover h-[720px]" src="./src/o-firmie.png" alt="O-firmie" />
           </figure>
         </div>
         <div
@@ -472,7 +466,7 @@
               małoobsługowe, dostosowane do współczesnego trybu życia.
             </p>
             <button
-              class="rounded-full bg-transparent py-3 px-[22px] border-soli border-2 border-[#F5F0EC] inter max-w-max"
+              class="rounded-full bg-transparent py-3 px-[22px] border-solid border-2 border-white inter max-w-max mx-auto lg:ml-0"
             >
               <div class="flex">
                 Poznaj nas bliżej
