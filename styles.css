@@ -32,3 +32,7 @@ body {
   height: 737px !important;
   object-fit: cover;
  }
+
+ .dropdown:hover .dropdown-menu {
+  display: block;
+}
