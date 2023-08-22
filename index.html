@@ -53,7 +53,7 @@
             <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">O firmie</a>
             <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Realizacje</a>
             <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Kontakt</a>
-            <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+            <a href="#" class="text-sm leading-5">
               <img
                 src="./src/icons/magnifying-glass.svg"
                 class="w-6 h-6"
@@ -156,11 +156,10 @@
               <div
                 class="inline-block text-center lg:flex lg:flex-cols align-top justify-between mt-11 font-normal text-base"
               >
-                <button
-                  class="rounded-full bg-[#1B5B31] py-3 px-6 text-[#F5F0EC]"
-                >
-                  Skontaktuj się z nami
-                </button>
+              <button class="rounded-full bg-[#1B5B31] py-3 px-6 text-[#F5F0EC] hover:bg-[#000000] transition duration-300">
+                Skontaktuj się z nami
+              </button>
+              
                 <button
                   class="rounded-full bg-transparent py-3 px-6 border-soli border-2 border-[#1B5B31] text-[#1B5B31] mt-12 md:mt-0"
                 >
@@ -618,17 +617,31 @@
           >
             <div>
               <ul class="grid grid-cols-2 lg:grid-rows-1 lg:grid-cols-4">
-                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start"><a href="#"></a>Kontakt</li>
-                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start"><a href="#"></a>Instagram</li>
-                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start"><a href="#"></a>Facebook</li>
-                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start"><a href="#"></a>LinkedIn</li>
+                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start">
+                  <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:transition-transform after:duration-300 after:origin-center hover:after:scale-x-100">
+                    Kontakt
+                  </a>
+                  </li>
+                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start">
+                  <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:transition-transform after:duration-300 after:origin-center hover:after:scale-x-100">Instagram</a>
+                  </li>
+                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start">
+                  <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:transition-transform after:duration-300 after:origin-center hover:after:scale-x-100">Facebook</a>
+                  </li>
+                <li class="mx-6 my-4 lg:my-0 lg:ml-0 justify-self-center lg:justify-self-start">
+                  <a href="#" class="text-sm leading-5 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:transition-transform after:duration-300 after:origin-center hover:after:scale-x-100">LinkedIn</a>
+                  </li>
               </ul>
             </div>
             <div
               class="flex lg:flex-row flex-col flex-initial lg:justify-end text-center"
             >
-              <div class="lg:mr-12 my-12 lg:my-0">000-000-000</div>
-              <div class="lg:order-last">giarddesign@kontakt.pl</div>
+            <div class="lg:mr-12 my-12 lg:my-0">
+              <a href="tel:000-000-000" class="cursor-pointer relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:transition-transform after:duration-300 after:origin-center hover:after:scale-x-100">000-000-000</a>
+            </div>
+            <div class="lg:order-last">
+              <a href="mailto:giarddesign@kontakt.pl" class="cursor-pointer relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:transition-transform after:duration-300 after:origin-center hover:after:scale-x-100">giarddesign@kontakt.pl</a>
+            </div>
             </div>
           </div>
           <div class="max-w-[1040px] mx-auto grid grid-rows-2 grid-cols-1 lg:grid-cols-2 justify-between mt-[120px] mb-20">
