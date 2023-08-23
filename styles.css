@@ -40,3 +40,33 @@ body {
 .search-input:hover {
   display: block;
 }
+
+.mosaic-column-1 {
+  max-width: 33%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 30% auto;
+  grid-row-gap: 42px;
+  gap: 42px;
+}
+
+.mosaic-column-2 {
+  max-width: 33%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 30% 40%;
+  grid-row-gap: 42px;
+  gap: 42px;
+}
+
+.mosaic-column-3 {
+  max-width: 33%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 40% auto;
+  grid-row-gap: 42px;
+  gap: 42px;
+}
