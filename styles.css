@@ -70,3 +70,16 @@ body {
   grid-row-gap: 42px;
   gap: 42px;
 }
+
+  @keyframes arrow-move {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+  }
+
+  .animate-arrow:hover {
+    animation: arrow-move 1s infinite;
+  }
